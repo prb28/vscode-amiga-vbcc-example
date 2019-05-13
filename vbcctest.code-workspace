@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"amiga-assembly.cstool": "bin/osx/cstool",
+		"amiga-assembly.vasm": {
+			"enabled": true,
+			"file": "bin/osx/vasmm68k_mot",
+			"options": [
+				"-m68000",
+				"-Fhunk",
+				"-linedebug"
+			]
+		},
+		"amiga-assembly.vlink": {
+			"enabled": false,
+			"file": "bin/osx/vlink",
+			"includes": "*.s",
+			"excludes": "",
+			"exefilename": "../fs-uae/hd0/hello",
+			"options": [
+				"-bamigahunk",
+				"-Bstatic"
+			]
+		},
+		"amiga-assembly.adfgenerator": {
+			"ADFToolsParentDir": "bin/osx",
+			"sourceRootDir": "fs-uae/hd0",
+			"outputADFFile": "./build/disk.adf",
+			"includes": "**/*",
+			"excludes": "**/.*"
+		},
+		"editor.formatOnSave": true
+	}
+}
