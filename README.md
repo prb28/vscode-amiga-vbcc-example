@@ -22,6 +22,12 @@ Example of vscode workspace for Amiga Assembly and C integration building.
 - In the upper combo select ***Windows* Run** or ***LINUX* Run** or ***OSX* Run**
 - Click on the *Play* button or type F5
 
+### Debug the application
+- Click on the debug icon (⇧⌘D)
+- In the upper combo select ***Windows* Debug** or ***LINUX* Debug** or ***OSX* Debug**
+- Open a C or ASM file and set a breakpoint
+- Click on the *Play* button or type F5
+
 ## Adapting to your application
 ### Change the name of the application
 - Change the name `hello` of the executable in `vscode-amiga-vbcc-example-xxx.code-workspace`
