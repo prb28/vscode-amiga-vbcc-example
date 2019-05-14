@@ -6,12 +6,31 @@
         {
             "label": "Build",
             "type": "shell",
-            "options": {
-                "env": {
-                    "VBCC": "bin/osx"
-                }
+            "windows": {
+                "options": {
+                    "env": {
+                        "VBCC": "bin\\windows_x64",
+                        "PATH": "bin\\windows_x64"
+                    }
+                },
+                "command": "bin\\windows_x64\\make -f Makefile.win"
             },
-            "command": "export PATH=$VBCC:$PATH; make",
+            "osx": {
+                "options": {
+                    "env": {
+                        "VBCC": "bin/osx"
+                    }
+                },
+                "command": "export PATH=$VBCC:$PATH; make"
+            },
+            "linux": {
+                "options": {
+                    "env": {
+                        "VBCC": "bin/debian9_x64"
+                    }
+                },
+                "command": "export PATH=$VBCC:$PATH; make"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -20,12 +39,31 @@
         {
             "label": "Clean",
             "type": "shell",
-            "options": {
-                "env": {
-                    "VBCC": "bin/osx"
-                }
+            "windows": {
+                "options": {
+                    "env": {
+                        "VBCC": "bin\\windows_x64",
+                        "PATH": "bin\\windows_x64"
+                    }
+                },
+                "command": "bin\\windows_x64\\make -f Makefile.win clean"
             },
-            "command": "export PATH=$VBCC:$PATH; make clean",
+            "osx": {
+                "options": {
+                    "env": {
+                        "VBCC": "bin/osx"
+                    }
+                },
+                "command": "export PATH=$VBCC:$PATH; make clean"
+            },
+            "linux": {
+                "options": {
+                    "env": {
+                        "VBCC": "bin/debian9_x64"
+                    }
+                },
+                "command": "export PATH=$VBCC:$PATH; make clean"
+            }
         }
     ]
 }

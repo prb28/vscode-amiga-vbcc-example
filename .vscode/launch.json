@@ -102,7 +102,7 @@
             "startEmulator": true,
             "buildWorkspace": true,
             "emulator": "${workspaceFolder}/bin/debian9_x64/fs-uae",
-            "program": "${workspaceFolder}/fs-uae/hd0/gencop",
+            "program": "${workspaceFolder}/fs-uae/hd0/hello",
             "options": [
                 "--chip_memory=1024",
                 "--hard_drive_0=${workspaceFolder}/fs-uae/hd0",
