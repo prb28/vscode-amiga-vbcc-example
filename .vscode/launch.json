@@ -6,7 +6,16 @@
             "request": "launch",
             "name": "Run",
             "buildWorkspace": true,
-            "emulator": "${workspaceFolder}/bin/fs-uae",
+            "windows": {
+                "emulator": "${workspaceFolder}/bin/fs-uae.exe",
+            },
+            "osx": {
+                "emulator": "${workspaceFolder}/bin/fs-uae",
+            },
+            "linux": {
+                "emulator": "${workspaceFolder}/bin/fs-uae",
+            },
+            "emulatorWorkingDir": "${workspaceFolder}/bin",
             "options": [
                 "--chip_memory=1024",
                 "--hard_drive_0=${workspaceFolder}/fs-uae/hd0",
@@ -24,8 +33,17 @@
             "serverPort": 6860,
             "trace": false,
             "startEmulator": true,
-            "buildWorkspace": true,
-            "emulator": "${workspaceFolder}/bin/fs-uae",
+            "buildWorkspace": false,
+            "windows": {
+                "emulator": "${workspaceFolder}/bin/fs-uae.exe",
+            },
+            "osx": {
+                "emulator": "${workspaceFolder}/bin/fs-uae",
+            },
+            "linux": {
+                "emulator": "${workspaceFolder}/bin/fs-uae",
+            },
+            "emulatorWorkingDir": "${workspaceFolder}/bin",
             "program": "${workspaceFolder}/fs-uae/hd0/hello",
             "options": [
                 "--chip_memory=1024",

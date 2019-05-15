@@ -32,6 +32,9 @@
 			"outputADFFile": "./build/disk.adf",
 			"includes": "**/*",
 			"excludes": "**/.*"
+		},
+		"files.associations": {
+			"HELLO.C": "cpp"
 		}
 	}
 }

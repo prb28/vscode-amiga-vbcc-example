@@ -13,6 +13,7 @@ OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 ifeq ($(OS),Windows_NT)
 	RM:=del
 	PATHSEP:=\\
+	CONFIG:=${CONFIG}_win
 else
 	RM:=rm -f 
 	PATHSEP:=/
