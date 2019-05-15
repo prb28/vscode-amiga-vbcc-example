@@ -12,7 +12,7 @@ Example of vscode workspace for Amiga Assembly and C integration building.
 - Launch VSCode
 - Install the *Amiga Assembly Extension* extension
 - Install Microsoft C/C++ extension (optional)
-- Open the workspace **File/Open Workspace...** -> Select the `vbcc.code-workspace`
+- Open the workspace **File/Open Workspace...** -> Select the `vbcc`(.code-workspace)
 
 ### Build the code
 - Type (⇧⌘B) or enter the Command Palette (⇧⌘P or F1) and select `Tasks: Run Build Task`)
