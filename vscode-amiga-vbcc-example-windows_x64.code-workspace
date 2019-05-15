@@ -5,10 +5,10 @@
 		}
 	],
 	"settings": {
-		"amiga-assembly.cstool": "bin\\windows_x64\\cstool.exe",
+		"amiga-assembly.cstool": "bin/cstool.exe",
 		"amiga-assembly.vasm": {
 			"enabled": true,
-			"file": "bin\\windows_x64\\vasmm68k_mot.exe",
+			"file": "bin/vasmm68k_mot.exe",
 			"options": [
 				"-m68000",
 				"-Fhunk",
@@ -17,24 +17,21 @@
 		},
 		"amiga-assembly.vlink": {
 			"enabled": false, // VLINK is called by the makefile
-			"file": "bin\\windows_x64\\vlink.exe",
+			"file": "bin/vlink.exe",
 			"includes": "*.s",
 			"excludes": "",
-			"exefilename": "..\\fs-uae\\hd0\\gencop",
+			"exefilename": "../fs-uae/hd0/hello",
 			"options": [
 				"-bamigahunk",
 				"-Bstatic"
 			]
 		},
 		"amiga-assembly.adfgenerator": {
-			"ADFToolsParentDir": "bin\\windows_x64",
-			"sourceRootDir": "fs-uae\\hd0",
-			"outputADFFile": ".\\build\\disk.adf",
+			"ADFToolsParentDir": "bin",
+			"sourceRootDir": "fs-uae/hd0",
+			"outputADFFile": "./build/disk.adf",
 			"includes": "**/*",
 			"excludes": "**/.*"
 		},
-		"files.associations": {
-			"HELLO.C": "cpp"
-		}
 	}
 }

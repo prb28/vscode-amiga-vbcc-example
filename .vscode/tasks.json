@@ -9,16 +9,16 @@
             "windows": {
                 "options": {
                     "env": {
-                        "VBCC": "bin\\windows_x64",
-                        "PATH": "bin\\windows_x64"
+                        "VBCC": "bin",
+                        "PATH": "bin"
                     }
                 },
-                "command": "bin\\windows_x64\\make -f Makefile.win"
+                "command": "bin\\make"
             },
             "osx": {
                 "options": {
                     "env": {
-                        "VBCC": "bin/osx"
+                        "VBCC": "bin"
                     }
                 },
                 "command": "export PATH=$VBCC:$PATH; make"
@@ -26,7 +26,7 @@
             "linux": {
                 "options": {
                     "env": {
-                        "VBCC": "bin/debian9_x64"
+                        "VBCC": "bin"
                     }
                 },
                 "command": "export PATH=$VBCC:$PATH; make"
@@ -42,16 +42,16 @@
             "windows": {
                 "options": {
                     "env": {
-                        "VBCC": "bin\\windows_x64",
-                        "PATH": "bin\\windows_x64"
+                        "VBCC": "bin",
+                        "PATH": "bin"
                     }
                 },
-                "command": "bin\\windows_x64\\make -f Makefile.win clean"
+                "command": "bin\\make clean"
             },
             "osx": {
                 "options": {
                     "env": {
-                        "VBCC": "bin/osx"
+                        "VBCC": "bin"
                     }
                 },
                 "command": "export PATH=$VBCC:$PATH; make clean"
@@ -59,7 +59,7 @@
             "linux": {
                 "options": {
                     "env": {
-                        "VBCC": "bin/debian9_x64"
+                        "VBCC": "bin"
                     }
                 },
                 "command": "export PATH=$VBCC:$PATH; make clean"

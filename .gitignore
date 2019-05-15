@@ -3,4 +3,6 @@ build-vbcc
 fs-uae/hd0/hello
 .DS_Store
 bin/*
+!bin/config
+!bin/targets
 .vscode/ipch

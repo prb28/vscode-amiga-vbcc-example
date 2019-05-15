@@ -5,10 +5,10 @@
 		}
 	],
 	"settings": {
-		"amiga-assembly.cstool": "bin/osx/cstool",
+		"amiga-assembly.cstool": "bin/cstool",
 		"amiga-assembly.vasm": {
 			"enabled": true,
-			"file": "bin/osx/vasmm68k_mot",
+			"file": "bin/vasmm68k_mot",
 			"options": [
 				"-m68000",
 				"-Fhunk",
@@ -17,7 +17,7 @@
 		},
 		"amiga-assembly.vlink": {
 			"enabled": false, // VLINK is called by the makefile
-			"file": "bin/osx/vlink",
+			"file": "bin/vlink",
 			"includes": "*.s",
 			"excludes": "",
 			"exefilename": "../fs-uae/hd0/hello",
@@ -27,12 +27,11 @@
 			]
 		},
 		"amiga-assembly.adfgenerator": {
-			"ADFToolsParentDir": "bin/osx",
+			"ADFToolsParentDir": "bin",
 			"sourceRootDir": "fs-uae/hd0",
 			"outputADFFile": "./build/disk.adf",
 			"includes": "**/*",
 			"excludes": "**/.*"
-		},
-		"editor.formatOnSave": true
+		}
 	}
 }
