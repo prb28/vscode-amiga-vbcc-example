@@ -5,32 +5,32 @@ Example of vscode workspace for Amiga Assembly and C integration building.
 
 ## Getting started
 ### Download the workspace
-- Download the latest [Example vbcc workspace bundle](https://github.com/prb28/vscode-amiga-vbcc-example/releases) zip file
+- Download the latest [Example vbcc workspace bundle](https://github.com/prb28/vscode-amiga-vbcc-example/releases) zip file **FOR YOUR OS** 
 - Unzip it
 
 ### Setup VSCode
 - Launch VSCode
 - Install the *Amiga Assembly Extension* extension
 - Install Microsoft C/C++ extension (optional)
-- Open the workspace **File/Open Workspace...** -> Select the `vscode-amiga-vbcc-example-xxx.code-workspace` **corresponding file to your OS**
+- Open the workspace **File/Open Workspace...** -> Select the `vscode-amiga-vbcc-example.code-workspace`
 
 ### Build the code
 - Type (⇧⌘B) or enter the Command Palette (⇧⌘P or F1) and select `Tasks: Run Build Task`)
 
 ### Run the application
 - Click on the debug icon (⇧⌘D)
-- In the upper combo select ***Windows* Run** or ***LINUX* Run** or ***OSX* Run**
+- In the upper combo select **Run**
 - Click on the *Play* button or type F5
 
 ### Debug the application
 - Click on the debug icon (⇧⌘D)
-- In the upper combo select ***Windows* Debug** or ***LINUX* Debug** or ***OSX* Debug**
+- In the upper combo select **Debug**
 - Open a C or ASM file and set a breakpoint
 - Click on the *Play* button or type F5
 
 ## Adapting to your application
 ### Change the name of the application
-- Change the name `hello` of the executable in `vscode-amiga-vbcc-example-xxx.code-workspace`
+- Change the name `hello` of the executable in `vscode-amiga-vbcc-example.code-workspace`
 - Change the name `hello` in the Makefile
 
 ### Add/remove/rename a file to the build
