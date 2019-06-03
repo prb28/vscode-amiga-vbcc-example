@@ -28,7 +28,7 @@
             "type": "fs-uae",
             "request": "launch",
             "name": "Debug",
-            "stopOnEntry": true,
+            "stopOnEntry": false,
             "serverName": "localhost",
             "serverPort": 6860,
             "trace": false,
