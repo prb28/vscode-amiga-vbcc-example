@@ -5,7 +5,9 @@ int main()
 {
     short i;
 
-    for (i = 0; i < 10; i++)
+    mul_by_ten(1);
+
+    for (i = 0; i < 100; i++)
     {
         printf("Line %d\n", i);
         printf("10 * %d = %d\n", i, mul_by_ten(i));
