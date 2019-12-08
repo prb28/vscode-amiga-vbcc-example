@@ -22,7 +22,8 @@
                 "--joystick_port_1=none",
                 "--amiga_model=A1200",
                 "--slow_memory=1792"
-            ]
+            ],
+            "preLaunchTask": "Build"
         },
         {
             "type": "fs-uae",
@@ -54,7 +55,8 @@
                 "--remote_debugger=200",
                 "--use_remote_debugger=true",
                 "--automatic_input_grab=0"
-            ]
+            ],
+            "preLaunchTask": "Build"
         }
     ]
 }
