@@ -5,7 +5,7 @@ LDFLAGS=-stdlib
 CONFIG=+aos68k
 ODIR=build-vbcc
 
-EXE=fs-uae/hd0/hello
+EXE=uae/dh0/hello
 _OBJ = hello.o mul_by_ten.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 

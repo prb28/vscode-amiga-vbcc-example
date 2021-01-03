@@ -41,6 +41,7 @@ Example of vscode workspace for Amiga Assembly and C integration building.
 - Build [VLINK](http://sun.hasenbraten.de/vlink/index.php?view=main)
 - Build [VBCC](http://sun.hasenbraten.de/vlink/index.php?view=main)
 - Build a modified version of [FS-UAE](https://github.com/prb28/fs-uae)
+- Build a modified version of [WinUAE](https://github.com/prb28/WinUAE)
 - Download/Build [CAPSTONE](http://www.capstone-engine.org/download.html)
 - [Make.exe for windows](https://sourceforge.net/projects/gnuwin32/)
 
