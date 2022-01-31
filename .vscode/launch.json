@@ -2,10 +2,9 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "fs-uae-run",
+            "type": "uae-run",
             "request": "launch",
             "name": "FS-UAE Run",
-            "buildWorkspace": true,
             "windows": {
                 "emulator": "${workspaceFolder}/bin/fs-uae.exe",
             },
@@ -34,7 +33,6 @@
             "serverPort": 6860,
             "trace": false,
             "startEmulator": true,
-            "buildWorkspace": false,
             "windows": {
                 "emulator": "${workspaceFolder}/bin/fs-uae.exe",
             },
@@ -62,7 +60,6 @@
             "type": "winuae",
             "request": "launch",
             "name": "WinUAE Debug",
-            "buildWorkspace": true,
             "stopOnEntry": false,
             "serverName": "localhost",
             "serverPort": 2345,
