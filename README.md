@@ -5,7 +5,7 @@ Example of vscode workspace for Amiga Assembly and C integration building.
 
 ## Getting started
 ### Download the workspace
-- Download the latest [Example vbcc workspace bundle](https://github.com/prb28/vscode-amiga-vbcc-example/releases) zip file **FOR YOUR OS** 
+- Download the latest [Example vbcc workspace bundle](https://github.com/prb28/vscode-amiga-vbcc-example/releases) zip file **FOR YOUR OS**
 - Unzip it
 
 ### Setup VSCode
@@ -44,6 +44,8 @@ Example of vscode workspace for Amiga Assembly and C integration building.
 - Build a modified version of [WinUAE](https://github.com/prb28/WinUAE)
 - Download/Build [CAPSTONE](http://www.capstone-engine.org/download.html)
 - [Make.exe for windows](https://sourceforge.net/projects/gnuwin32/)
+
+The bundle containing these binaries is maintained in [vscode-amiga-assembly-binaries](https://github.com/prb28/vscode-amiga-assembly-binaries) repository.
 
 ## Misc docs
 - Blitter Studio Guide: https://blitterstudio.com/setting-up-an-amiga-cross-compiler-windows/
