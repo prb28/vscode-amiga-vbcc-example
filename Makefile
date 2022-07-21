@@ -22,7 +22,7 @@ endif
 all: $(EXE)
 
 $(EXE) : $(OBJ) 
-	$(VLINK) -bamigahunk -x -Bstatic -Cvbcc -nostdlib $(VBCC)/targets/m68k-amigaos/lib/startup.o $(OBJ) -L$(VBCC)/targets/m68k-amigaos/lib -lvc -o $(EXE)
+	$(CC) $(CONFIG) -g -v $(OBJ) -o $(EXE)
 
 $(ODIR)/%.o : %.c
 	$(CC) $(CONFIG) -g -c -o $@ $<
