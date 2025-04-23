@@ -6,8 +6,8 @@ CONFIG=+aos68k
 ODIR=build-vbcc
 
 EXE=uae/dh0/hello
-_OBJ = hello.o mul_by_ten.o
-OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
+_OBJ=hello.o mul_by_ten.o
+OBJ=$(patsubst %,$(ODIR)/%,$(_OBJ))
 
 # Prepare variables for target 'clean'
 ifeq ($(OS),Windows_NT)
@@ -25,7 +25,7 @@ $(EXE) : $(OBJ)
 	$(CC) $(CONFIG) -g -v $(OBJ) -o $(EXE)
 
 $(ODIR)/%.o : %.c
-	$(CC) $(CONFIG) -g -c -o $@ $<
+	$(CC) $(CONFIG) -g -c -notmpfile -o $@ $<
 
 $(ODIR)/%.o : %.s
 	$(VASM) -quiet -m68000 -Fhunk -linedebug -o $@ $<
@@ -33,4 +33,5 @@ $(ODIR)/%.o : %.s
 
 clean:
 	-$(RM) $(ODIR)$(PATHSEP)*.o
+	-$(RM) $(ODIR)$(PATHSEP)*.i
 	-$(RM) $(subst /,$(PATHSEP),$(EXE))

@@ -1,39 +1,30 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build",
+            "label": "vbcc-build",
             "type": "shell",
+            "options": {
+                "env": {
+                    "VBCC": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/win32",
+                    "PATH": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/win32"
+                }
+            },
             "windows": {
-                "options": {
-                    "env": {
-                        "VBCC": "bin",
-                        "PATH": "bin"
-                    }
-                },
-                "command": "bin\\make"
+                "command": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/win32/make"
             },
             "osx": {
-                "options": {
-                    "env": {
-                        "VBCC": "bin"
-                    }
-                },
-                "command": "export PATH=$VBCC:$PATH; make"
+                "command": "make"
             },
             "linux": {
-                "options": {
-                    "env": {
-                        "VBCC": "bin"
-                    }
-                },
-                "command": "export PATH=$VBCC:$PATH; make"
+                "command": "make"
             },
             "problemMatcher": {
                 "owner": "cpp",
-                "fileLocation": ["relative", "${workspaceFolder}"],
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
                 "pattern": {
                     "regexp": "^(warning|error) ([0-9]*) in line ([0-9]*) of \"(.*)\": (.*)$",
                     "severity": 1,
@@ -48,32 +39,16 @@
             }
         },
         {
-            "label": "Clean",
+            "label": "vbcc-clean",
             "type": "shell",
             "windows": {
-                "options": {
-                    "env": {
-                        "VBCC": "bin",
-                        "PATH": "bin"
-                    }
-                },
-                "command": "bin\\make clean"
+                "command": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/win32/make clean"
             },
             "osx": {
-                "options": {
-                    "env": {
-                        "VBCC": "bin"
-                    }
-                },
-                "command": "export PATH=$VBCC:$PATH; make clean"
+                "command": "make clean"
             },
             "linux": {
-                "options": {
-                    "env": {
-                        "VBCC": "bin"
-                    }
-                },
-                "command": "export PATH=$VBCC:$PATH; make clean"
+                "command": "make clean"
             }
         }
     ]
