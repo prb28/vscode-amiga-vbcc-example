@@ -4,20 +4,30 @@
         {
             "label": "vbcc-build",
             "type": "shell",
-            "options": {
-                "env": {
-                    "VBCC": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/win32",
-                    "PATH": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/win32"
-                }
-            },
             "windows": {
+                "options": {
+                    "env": {
+                        "VBCC": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/win32",
+                        "PATH": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/win32"
+                    }
+                },
                 "command": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/win32/make"
             },
             "osx": {
-                "command": "make"
+                "options": {
+                    "env": {
+                        "VBCC": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/darwin"
+                    }
+                },
+                "command": "export PATH=$VBCC:$PATH; make"
             },
             "linux": {
-                "command": "make"
+                "options": {
+                    "env": {
+                        "VBCC": "${extensionInstallFolder:prb28.amiga-assembly}/resources/bin/linux"
+                    }
+                },
+                "command": "export PATH=$VBCC:$PATH; /usr/bin/make"
             },
             "problemMatcher": {
                 "owner": "cpp",

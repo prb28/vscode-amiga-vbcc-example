@@ -6,3 +6,4 @@ bin
 !bin/config
 !bin/targets
 .vscode/ipch
+hello.asm

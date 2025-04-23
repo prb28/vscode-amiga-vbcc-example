@@ -25,7 +25,7 @@ $(EXE) : $(OBJ)
 	$(CC) $(CONFIG) -g -v $(OBJ) -o $(EXE)
 
 $(ODIR)/%.o : %.c
-	$(CC) $(CONFIG) -g -c -notmpfile -o $@ $<
+	$(CC) $(CONFIG) -g -c -k -o $@ $<
 
 $(ODIR)/%.o : %.s
 	$(VASM) -quiet -m68000 -Fhunk -linedebug -o $@ $<
